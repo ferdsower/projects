@@ -6,155 +6,114 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
-    <title>FGuiang Projects</title>
-  </head>
-  <body>
+    <title>FGuiang Projects</title>   
+     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+   </head> 
+   <body>
     
-    <!------------------ Navigation bar -------------------------->
-<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top transparent">
-  <div class="container">
-<!------------------ Button to expand appears when viewport is too small ------------->
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" id="nav-links-button">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <div class="container bootstrap snippet">
+    <h1 class="text-center section-title">Our Portfolio</h1>
+    <hr>
+    <section id="portfolio" class="gray-bg padding-top-bottom">    
+		<div class="container bootstrap snippet">
+			<!--==== Portfolio Filters ====-->
+			<div class="categories">
+				<ul>
+					<li class="active">
+						<a href="#" data-filter="*">All Categories</a>
+					</li>
+					<li>
+						<a href="#" data-filter=".web-design">Web Design</a>
+					</li>
+					<li>
+						<a href="#" data-filter=".apps">Apps</a>
+					</li>
+					<li>
+						<a href="#" data-filter=".psd">PSD</a>
+					</li>
+				</ul>
+			</div>
+			
+			<!-- ======= Portfolio items ===-->
+			<div class="projects-container scrollimation in">
+				<div class="row">
+					<article class="col-md-4 col-sm-6 portfolio-item web-design apps psd">
+						<div class="portfolio-thumb in">
+							<a href="#" class="main-link">
+								<img class="img-responsive img-center" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="">
+								<h2 class="project-title">Billing</h2>
+								<span class="overlay-mask"></span>
+							</a>
+							<a class="enlarge cboxElement" href="#" title="Bills Project"><i class="fa fa-expand fa-fw"></i></a>
+							<a class="link" href="#"><i class="fa fa-eye fa-fw"></i></a>
+						</div>
+					</article>
 
-    
-<!------------------ Collapsible links ----------------->
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav navbar-toggler-right" id="nav-links">
-        <a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
-        <a class="nav-item nav-link" href="#about">About</a>
-        <a class="nav-item nav-link" href="#contact">Contact</a>
-      </div>
-    </div>
-  </div>
-</nav>
-  
-<!------------- Portfolio section ----------------->
-      <div class="row pt-2 text-center" id="portfolio">
-        <div class="col-12">
-          <h1>My Work</h1>
-        </div>
-        <div class="col-md-3 offset-2">
-          <div class="img-thumbnail">
-            <a href="https://ferdsower.github.io/mini-project-1/" target="_blank">
-               <img src="http://www.ktminx.com/fcckt/ktminx.png" class="rounded img-responsive" alt="Let's Cook">
-            </a>
-            <div class="caption">
-              Menu Planner
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 offset-2">
-          <div class="img-thumbnail">
-            <a href="https://ferdsower.github.io/mini-project-2/" target="_blank">
-              <img src="http://www.ktminx.com/fcckt/twisted.png" class="rounded img-responsive" alt="Kodeflix">
-            </a>
-            <div class="caption">
-              Kodeflix - A Netflix Clone
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 offset-2">
-          <div class="img-thumbnail">
-            <a href="http://codepen.io/ktminks/full/dvdyWB/" target="_blank">
-              <img src="http://www.ktminx.com/fcckt/weatherapp.png" class="rounded img-responsive" alt="Wunderground API">
-            </a>
-            <div class="caption">
-              Local Weather, Wunderground API
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 offset-2">
-          <div class="img-thumbnail">
-            <a href="https://codepen.io/ktminks/full/zZPjBv/" target="_blank">
-              <img src="http://www.ktminx.com/fcckt/wikiAPI.png" class="rounded img-responsive" alt="Wikipedia API">
-            </a>
-            <div class="caption">
-              Wikipedia Search App API
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 offset-2">
-          <div class="img-thumbnail">
-            <a href="https://codepen.io/ktminks/full/rywByR/" target="_blank">
-              <img src="http://www.ktminx.com/fcckt/quoteable.png" class="rounded img-responsive" alt="Mindfulness quote generator">
-            </a>
-            <div class="caption">
-              Mindfulness quote generator
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 offset-2">
-          <div class="img-thumbnail">
-            <a href="https://codepen.io/ktminks/full/qrywwg/" target="_blank">
-              <img src="http://www.ktminx.com/fcckt/calculator.png" class="rounded img-responsive" alt="Javascript calculator">
-            </a>
-            <div class="caption">
-              Javascript calculator
-            </div>
-          </div>
-        </div>
-      </div>
+					<article class="col-md-4 col-sm-6 portfolio-item apps">
+						<div class="portfolio-thumb in">
+							<a href="#" class="main-link">
+								<img class="img-responsive img-center" src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="">
+								<h2 class="project-title">Augmented Tourist</h2>
+								<span class="overlay-mask"></span>
+							</a>
+							<a class="link centered" href=""><i class="fa fa-eye fa-fw"></i></a>
+						</div>
+					</article>
+					
+					<article class="col-md-4 col-sm-6 portfolio-item web-design psd">
+						<div class="portfolio-thumb in">
+							<a href="#" class="main-link">
+								<img class="img-responsive img-center" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="">
+								<h2 class="project-title">Get Colored</h2>
+								<span class="overlay-mask"></span>
+							</a>
+							<a class="enlarge centered cboxElement" href="#" title="Get Colored"><i class="fa fa-expand fa-fw"></i></a>
+						</div>
+					</article>
+					
+					<article class="col-md-4 col-sm-6 portfolio-item apps">
+						<div class="portfolio-thumb in">
+							<a href="#" class="main-link">
+								<img class="img-responsive img-center" src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="">
+								<h2 class="project-title">Holiday Selector</h2>
+								<span class="overlay-mask"></span>
+							</a>
+							<a class="enlarge cboxElement" href="#" title="Holiday Selector"><i class="fa fa-expand fa-fw"></i></a>
+							<a class="link" href="#"><i class="fa fa-eye fa-fw"></i></a>
+						</div>
+					</article>
+					
+					<article class="col-md-4 col-sm-6 portfolio-item web-design psd">
+						<div class="portfolio-thumb in">
+							<a href="#" class="main-link">
+								<img class="img-responsive img-center" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="">
+								<h2 class="project-title">Scavenger Hunt</h2>
+								<span class="overlay-mask"></span>
+							</a>
+							<a class="enlarge cboxElement" href="#" title="Scavenger Hunt"><i class="fa fa-expand fa-fw"></i></a>
+							<a class="link" href="#"><i class="fa fa-eye fa-fw"></i></a>
+						</div>
+					</article>
+					
+					<article class="col-md-4 col-sm-6 portfolio-item web-design apps">
+						<div class="portfolio-thumb in">
+							<a href="#" class="main-link">
+								<img class="img-responsive img-center" src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="">
+								<h2 class="project-title">Sonor</h2>
+								<span class="overlay-mask"></span>
+							</a>
+							<a class="enlarge cboxElement" href="#" title="Sonor"><i class="fa fa-expand fa-fw"></i></a>
+							<a class="link" href="#"><i class="fa fa-eye fa-fw"></i></a>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>	
+	</section>
+</div>	
 
 
-  
-<!-------------- Contact form ------------>
-  <div class="row" id="contact">
-    <div class="col-md-12">
-      <h3 class="text-center">Contact me!</h3>
-    </div>
-  </div>
-  <form class="text-center" id="contact-me">
-    <div class="form-group row">
-      <label for="contact-name" class="col-md-1 offset-2 col-form-label">Name</label>
-      <div class="col-6 offset-1">
-        <input class="form-control" type="text" id="contact-name" placeholder="Mary Jones">
-      </div>
-    </div>
-    <div class="form-group row">
-      <label for="contact-email" class="col-md-1 offset-2 col-form-label">Email</label>
-      <div class="col-6 offset-1 col-xs-8">
-        <input class="form-control" type="email" id="contact-email" placeholder="Mary@Jones.com">
-      </div>
-    </div>
-    <div class="form-group row">
-      <label for="contact-subject" class="col-md-1 offset-2 col-form-label">Subject</label>
-      <div class="col-6 offset-1">
-        <input class="form-control" type="text" id="contact-subject" placeholder="Just Paying a Compliment">
-      </div>
-    </div>
-    <div class="form-group row">
-      <label for="contact-message" class="col-md-1 offset-2 col-form-label">Message</label>
-      <div class="col-6 offset-1">
-        <textarea class="form-control" rows=3 id="contact-message" placeholder="I have things to say!"></textarea><br>
-      </div>
-    </div>
-    <button class="btn btn-outline-info" id="submission" type="submit" value="Submit">Submit</button>
-  </form>
-
-<!------------- Footer ---------->
-<div class="navbar navbar-fixed-bottom transparent">
-  <div class="container">
-    <div class="row footer text-center">
-      <div class="col-md-6">
-        <p class="text-muted">&copy; FvGuiang 2023</p>
-      </div>
-      <div class="col-md-6">
-        <p>
- <!--------- Social icons ----------->
-          <a href="https://www.facebook.com/ktminks" target="_blank"><i class="fa fa-facebook"></i></a>
-          <a href="https://kminckler.deviantart.com" target="_blank"><i class="fa fa-deviantart"></i></a>
-          <a href="https://plus.google.com/u/0/+KatieMinckler" target="_blank"><i class="fa fa-google-plus"></i></a>
-          <a href="https://www.linkedin.com/in/ktminks" target="_blank"><i class="fa fa-linkedin"></i></a>
-          <a href="http://resume.ktminx.com/wp/" target="_blank"><i class="fa fa-wordpress"></i></a>
-          <a href="https://github.com/ktminks" target="_blank"><i class="fa fa-github"></i></a>
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-    
-  </body>
+   </body>
 </html>
